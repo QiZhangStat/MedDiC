@@ -69,7 +69,7 @@ save(trans.eqtl,cis.eqtl,file='locus_info.rdata')
 
 #' We read the genotype marker data.
 gta = read.csv('genotype.csv',header=T,row.names = 1)
-#' We read the gene expression data from a .csv file.
+#' We read the gene expression data from a .csv file. The original .csv file is very large and cannot be uploaded to github. You need to use 7-zip file manager or the alikes to combine the 10 uploaded parts into one .csv file.
 expr = read.csv('islet_expression.csv',header=T,row.names = 1)
 expr[1:3,1:5]
 colnames(expr) = gsub('X','',colnames(expr))
